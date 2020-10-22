@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>ACT2CON</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="js/typed.js"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!--Fade CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Fade JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand text-black" href="index2.html">A2C</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                    <li id="join" class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#exampleModal"
+                            href="#join">Join</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#exampleModal2"
+                            href="meeting.html">Host</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="masthead">
+        <div class="container-fluid">
+            <div class="row mast">
+                <div class="col-sm-6 first">
+                    <div class="mx-auto text-center">
+                        <script type="text/javascript">
+                            var TxtRotate = function (el, toRotate, period) {
+                                this.toRotate = toRotate;
+                                this.el = el;
+                                this.loopNum = 0;
+                                this.period = parseInt(period, 10) || 2000;
+                                this.txt = '';
+                                this.tick();
+                                this.isDeleting = false;
+                            };
+
+                            TxtRotate.prototype.tick = function () {
+                                var i = this.loopNum % this.toRotate.length;
+                                var fullTxt = this.toRotate[i];
+
+                                if (this.isDeleting) {
+                                    this.txt = fullTxt.substring(0, this.txt.length - 1);
+                                } else {
+                                    this.txt = fullTxt.substring(0, this.txt.length + 1);
+                                }
+
+                                this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+                                var that = this;
+                                var delta = 300 - Math.random() * 100;
+
+                                if (this.isDeleting) { delta /= 2; }
+
+                                if (!this.isDeleting && this.txt === fullTxt) {
+                                    delta = this.period;
+                                    this.isDeleting = true;
+                                } else if (this.isDeleting && this.txt === '') {
+                                    this.isDeleting = false;
+                                    this.loopNum++;
+                                    delta = 500;
+                                }
+
+                                setTimeout(function () {
+                                    that.tick();
+                                }, delta);
+                            };
+
+                            window.onload = function () {
+                                var elements = document.getElementsByClassName('txt-rotate');
+                                for (var i = 0; i < elements.length; i++) {
+                                    var toRotate = elements[i].getAttribute('data-rotate');
+                                    var period = elements[i].getAttribute('data-period');
+                                    if (toRotate) {
+                                        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                                    }
+                                }
+                                // INJECT CSS
+                                var css = document.createElement("style");
+                                css.type = "text/css";
+                                css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+                                document.body.appendChild(css);
+                            };
+
+                            // function join() {
+                            //     document.getElementById('exampleModal').style.visibility = "visible";
+                            // }
+
+                        </script>
+                    </div>
+                    <div class="desc-panel">
+                        <h1 class="typestyle">
+                            <span class="a2c" data-aos="fade-down">Act2Con</span>
+                            <hr style="border-top: none;">
+                            <span class="txt-rotate" data-aos="fade-right" data-period="500"
+                                data-rotate='["to you, for you. ", "Act to Connect. "]'></span>
+                        </h1>
+                    </div>
+
+                    <a class="btn btn-primary js-scroll-trigger" data-aos="fade-up" href="#about">Get Started</a>
+                </div>
+            </div>
+            <div class="col-sm-6 second">
+                <img src="./assets/img/sab.gif" data-aos="fade-left">
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="about-img">
+                        <img data-aos="flip-right" src="./assets/img/peer2.gif">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="about-text">
+                        <h1 class="mx-auto my-0 text-uppercase" data-aos="fade-down">About Us </h1>
+                        <p data-aos="fade-left">Act2Con helps businesses and organizations bring their teams together in
+                            a frictionless environment to get more done. Our easy, reliable cloud platform for video,
+                            voice, content sharing, and chat runs across mobile devices, desktops, telephones, and room
+                            systems. Act2Con notes are ideal for business users working from home and students attending
+                            classes online who want to highlight, share, search, and review their notes. Team members
+                            can feel confident that their colleagues will generate and share secure quality notes so
+                            they can quickly get the information they need when they miss a meeting. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-section">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="mx-auto my-0 text-uppercase main-head">Features</h1>
+                <div class="col-sm-4 content">
+                    <h2 class="mx-auto my-0 text-uppercase">Messaging</h2>
+                    <img src="./assets/img/msg1.jpg" height="60%" width="60%" data-aos="flip-right">
+                    <p data-aos="fade-down">Make collaboration easier between teams and external participants with
+                        chat and video meetings.</p>
+                </div>
+                <div class="col-sm-4 anywhere">
+                    <h2 class="mx-auto my-0 text-uppercase">Recording</h2>
+                    <img src="./assets/img/rec.png" height="60%" width="70%" style="margin-left: 70px"
+                        data-aos="flip-right">
+                    <p data-aos="fade-down">Create a virtual workspace where all the right people for every project are
+                        ready to collaborate.</p>
+                </div>
+                <div class="col-sm-4 services">
+                    <h2 class="mx-auto my-0 text-uppercase">Screen Share</h2>
+                    <img src="./assets/img/ss.png" height="60%" width="60%" style="margin-left: 70px"
+                        data-aos="flip-right">
+                    <p data-aos="fade-down">Save time by quickly finding messages, content, and links related to your
+                        conversations and projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mom-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="col-sm-6">
+                        <div class="about-img">
+                            <img data-aos="flip-right" src="./assets/img/mom.gif" height="200%" width="200%">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h1 class="mx-auto my-0 text-uppercase" data-aos="fade-down">Mintues Of Meeting </h1>
+                    <ul data-aos="fade-left">
+                        <li>Act2Con notes are ideal for users working from home and students attending classes online
+                        </li>
+                        <li>Who want to highlight, share, search, and review</li>
+                        <li>Share secure quality notes so they can quickly get the gist they need when they miss a
+                            meeting</li>
+                        <li>Students to know about the main points discussed in the class</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Meeting ID</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="join.php" method="POST">
+                    <input type="text" class="meetid" style="width: 100%;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="submit" class="btn btn-primary" href="video_display/screenshare2/demo.html">Join</a>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Meeting Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body host">
+                    <div class="joining-form">
+                        <input id="user-name" name="user-name" type="text" class="user-name" placeholder="Name">
+                        <br>
+                        <div class="time">
+                            <label for="start-time" class="start">Start Time</label>
+                            <input type="time" name="start-time" id="start-time" class="start-time">
+                            <label class="etime" for="end-time">End Time</label>
+                            <input type="time" name="end-time" id="end-time" class="end-time">
+                        </div>
+                        <div class="date">
+                            <label for="start-date">Date</label>
+                            <input type="date" name="start-date" id="start-date" class="start-date">
+                        </div>
+                        <p class="recording">Do you want to record the session?</p>
+                        <div class="record">
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="choice" id="yes" class="form-check-input" checked>
+                                <label for="yes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="choice" id="no" class="form-check-input">
+                                <label for="no">No</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Join</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="something"></div>
+
+    <center>
+        <footer style="background-color: black;">
+            <div
+                style="display: flex; background-color: black; justify-content: space-around; padding-top: 50px; padding-bottom: 50px;">
+                <div>
+                    <ul class="footer-nav" id="ult">
+                        <li><a href="#">Explore</a></li>
+                        <li><br>
+                        </li>
+                        <br>
+                        <li><a href="#">Fund Us</a></li>
+                        <li><br>
+                        </li>
+                        <br>
+                        <li><a href="#">GoFundMe</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer-nav" id="ult">
+                        <li><a href="proper.html">About us</a></li>
+                        <li><br>
+                        </li>
+                        <br>
+                        <li><a href="#">Help and Support</a></li>
+                        <li><br>
+                        </li>
+                        <br>
+                        <li><a href="#">Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer-nav" id="ult">
+                        <li><a href="#">How It Works</a></li>
+                        <li><br>
+                        </li>
+                        <br>
+                        <li><a href="#">Fees</a></li>
+                        <br>
+                        <br>
+                        <li><a href="#">Enterprise</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src=".\assets\img\facebook.png" width="40px" class="footico">
+                <img src=".\assets\img\instagram.png" width="30px" class="footico">
+                <img class="footico" src=".\assets\img\gmail.png" width="40px">
+                <img class="footico" src=".\assets\img\twitter.png" width="35px">
+                <div>A C T 2 C O N &copy<br><br>
+                    Act To Connect
+                </div>
+            </div>
+        </footer>
+    </center>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+
+
+</html>

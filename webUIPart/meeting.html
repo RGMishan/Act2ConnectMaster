@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="js/typed.js"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!--Fade CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Fade JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/meeting.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand text-black" href="index2.html">A2C</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link text-black" href="#">Login/Signup<span
+                                class="sr-only">(current)</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="meeting">
+        <div class="container-fluid">
+            <div class="joining-form">
+                <h2>Enter the meeting details</h2>
+                <label for="user-name">Meeting Name</label>
+                <input id="user-name" name="user-name" type="text" class="user-name">
+                <label for="start-time">Start Time</label>
+                <input type="time" name="start-time" id="start-time" class="start-time">
+                <label for="end-time">End Time</label>
+                <input type="time" name="end-time" id="end-time" class="end-time">
+                <label for="start-date">Date</label>
+                <input type="date" name="start-date" id="start-date" class="start-date">
+                <p class="recording">Do you want to record the session?</p>
+                <label for="yes">Yes</label>
+                <input type="radio" name="choice" id="yes" class="yes">
+                <label for="no">No</label>
+                <input type="radio" name="choice" id="no" class="no">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+</body>
+
+<script>
+    AOS.init({
+        duration: 1200,
+    })
+</script>
+
+</html>

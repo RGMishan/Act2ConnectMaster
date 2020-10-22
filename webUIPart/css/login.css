@@ -1,0 +1,422 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*FORGOT ANCHOR STYLING*/
+
+.login-form .first .forgot {
+    margin-left: 10px;
+}
+
+
+/*NEW USER ANCHOR STYLING*/
+
+.login-form .first .new-account {
+    margin-left: 170px;
+}
+
+
+/*RIGHT SIDE IMAGE STYLING*/
+
+.login-form .second img {
+    height: auto;
+    width: auto;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    top: 20%;
+    left: 10%;
+    z-index: -1;
+}
+
+
+/*INPUT FIELDS STYLING*/
+
+.login-form .first .form-group .mail {
+    position: relative;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 17px 0;
+    height: 50px;
+    width: 423px;
+    font-size: 15px;
+    border: 2px solid #00a9ff;
+}
+
+.login-form .first .form-group .mail-span {
+    position: absolute;
+    top: 64%;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: 0.25s ease;
+}
+
+.login-form .first .form-group .mail:focus+.mail-span,
+.login-form .first .form-group .mail:valid+.mail-span {
+    top: 58%;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #00a9ff;
+    background: #fff;
+}
+
+.login-form .first .form-group .pw {
+    position: relative;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: 20px;
+    width: 423px;
+    height: 50px;
+    border: 2px solid #00a9ff;
+}
+
+.login-form .first .form-group .pw-span {
+    position: absolute;
+    padding: 0;
+    top: 83%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    left: 28px;
+    pointer-events: none;
+    color: #8c8c8c;
+    background: #fff;
+    transition: 0.23s ease;
+}
+
+.login-form .first .form-group .pw:focus+.pw-span,
+.login-form .first .form-group .pw:valid+.pw-span {
+    top: 77%;
+    font-size: 13px;
+    padding-left: 10px;
+    color: #00a9ff;
+}
+
+.login-form .first .login {
+    display: flex;
+    position: absolute;
+    margin-top: 10%;
+    padding: 15px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 430px;
+    justify-content: center;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+
+.login-form .first .login span {
+    position: absolute;
+    display: block;
+    background: #03a9f4;
+}
+
+.login-form .first .login span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    transform: translateY(0);
+}
+
+.login-form .first .login:hover span:nth-child(1) {
+    transition: 0.5s;
+    transform: translateY(-100%);
+}
+
+.login-form .first .login span:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transform: translateX(-100%);
+}
+
+.login-form .first .login:hover span:nth-child(2) {
+    transform: translateX(100%);
+    transition: 0.75s;
+    transition-delay: 0.25s;
+}
+
+.login-form .first .login span:nth-child(3) {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    transform: translateY(-100%);
+}
+
+.login-form .first .login:hover span:nth-child(3) {
+    transform: translateY(0);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.login-form .first .login span:nth-child(4) {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    transform: translateY(0);
+}
+
+.login-form .first .login:hover span:nth-child(4) {
+    transition: 0.5s;
+    transform: translateY(100%);
+}
+
+.login-form .first .login span:nth-child(5) {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transform: translateX(100%);
+}
+
+.login-form .first .login:hover span:nth-child(5) {
+    transform: translateX(-100%);
+    transition: 0.75s;
+    transition-delay: 0.25s;
+}
+
+.login-form .first .login span:nth-child(6) {
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.login-form .first .login:hover span:nth-child(6) {
+    transform: translateY(0);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.login-form .first .google-btn {
+    position: absolute;
+    display: flex;
+    margin-top: 30%;
+    padding: 15px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 200px;
+    justify-content: center;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+
+.login-form .first .google-btn span {
+    position: absolute;
+    display: block;
+    background: linear-gradient(#4885ed, #db3236, #f4c20d, #4885ed, #3cba54, #db3236);
+}
+
+.login-form .first .google-btn span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    transform: translateY(0);
+}
+
+.login-form .first .google-btn:hover span:nth-child(1) {
+    transition: 0.5s;
+    transform: translateY(-100%);
+}
+
+.login-form .first .google-btn span:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateX(-100%);
+}
+
+.login-form .first .google-btn:hover span:nth-child(2) {
+    transform: translateX(100%);
+    transition: 0.75s;
+    transition-delay: 0.25s;
+}
+
+.login-form .first .google-btn span:nth-child(3) {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    transform: translateY(-100%);
+}
+
+.login-form .first .google-btn:hover span:nth-child(3) {
+    transform: translateY(0);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.login-form .first .google-btn span:nth-child(4) {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    transform: translateY(0);
+}
+
+.login-form .first .google-btn:hover span:nth-child(4) {
+    transition: 0.5s;
+    transform: translateY(100%);
+}
+
+.login-form .first .google-btn span:nth-child(5) {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateX(100%);
+}
+
+.login-form .first .google-btn:hover span:nth-child(5) {
+    transform: translateX(-100%);
+    transition: 0.75s;
+    transition-delay: 0.25s;
+}
+
+.login-form .first .google-btn span:nth-child(6) {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.login-form .first .google-btn:hover span:nth-child(6) {
+    transform: translateY(0);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.login-form .first .fb-btn {
+    position: absolute;
+    display: flex;
+    margin-top: 30%;
+    margin-left: 40%;
+    width: 200px;
+    padding: 15px 30px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: #000;
+    overflow: hidden;
+    justify-content: center;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+
+.login-form .first .fb-btn span {
+    position: absolute;
+    display: block;
+    background: #3b5998;
+}
+
+.login-form .first .fb-btn span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    transform: translateY(0);
+}
+
+.login-form .first .fb-btn:hover span:nth-child(1) {
+    transition: 0.5s;
+    transform: translateY(-100%);
+}
+
+.login-form .first .fb-btn span:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateX(-100%);
+}
+
+.login-form .first .fb-btn:hover span:nth-child(2) {
+    transform: translateX(100%);
+    transition: 0.75s;
+    transition-delay: 0.25s;
+}
+
+.login-form .first .fb-btn span:nth-child(3) {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    transform: translateY(-100%);
+}
+
+.login-form .first .fb-btn:hover span:nth-child(3) {
+    transform: translateY(0);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.login-form .first .fb-btn span:nth-child(4) {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    transform: translateY(0);
+}
+
+.login-form .first .fb-btn:hover span:nth-child(4) {
+    transition: 0.5s;
+    transform: translateY(100%);
+}
+
+.login-form .first .fb-btn span:nth-child(5) {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateX(100%);
+}
+
+.login-form .first .fb-btn:hover span:nth-child(5) {
+    transform: translateX(-100%);
+    transition: 0.75s;
+    transition-delay: 0.25s;
+}
+
+.login-form .first .fb-btn span:nth-child(6) {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.login-form .first .fb-btn:hover span:nth-child(6) {
+    transform: translateY(0);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}

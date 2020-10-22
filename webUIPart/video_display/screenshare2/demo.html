@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>WebRTC Demo</title>
+
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
+    <script src="video-stream-merger.js"></script>
+    <script src="demo.js"></script>
+
+    <script>
+        $(function () {
+            
+            Demo.init();
+        });
+
+
+       
+    </script>
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>ACT2CON</title>
+    
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="js/typed.js"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!--Fade CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Fade JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="ss.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand text-black" href="index2.html">A2C</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                   
+                    <li class="nav-item"><a class="nav-link" href="#projects">Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</head>
+<body>
+    <br>
+    
+    <video autoplay muted  id="videoCtr" width="650" height="350"></video>
+   <!-- <video autoplay muted  id="screenShare" width="650" height="400"></video>-->
+
+   <video autoplay muted id="videoCtrRec" width="650" height="350" style="display:none"></video><br>
+    <div>
+       
+        <button id="btnMuteUnmute" class="button" >UnMute</button>
+        <button id="btnStartStopCam" class="button">Start Camera</button>
+        <button id="btnStartStopScreenshare" class="button" >Screen Share</button>
+        <button id="btnStartReco" class="button" >Start Recording</button>
+        <button id="btnPauseReco" style="display:none" class="button">Pause</button>
+        <button id="btnResumeReco" style="display:none" class="button">Resume</button>
+        <button id="btnStopReco" style="display:none" class="button">Stop</button><br><br>
+        <center style="margin-right: 180px;">
+
+
+        <a class="nav-link" href="index2.html"><h3>End Meeting</h3></a>
+            
+
+              
+            
+           
+            
+        <br>
+
+
+        
+        <a href="" id="downloadRecording" style="display:none;">Download</a></center>
+    
+        
+    </div>
+    <br>
+    <br>
+
+    
+</body>
+</html>
